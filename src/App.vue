@@ -27,6 +27,7 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  border-radius: 25% 0 25% 0;
 
 }
 

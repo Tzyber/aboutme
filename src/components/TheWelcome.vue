@@ -12,7 +12,7 @@ import Infoicon from "@/components/icons/infoicon.vue";
 
   <WelcomeItem class="item1">
     <template #icon>
-      <SupportIcon class="itemIcon" />
+      <SupportIcon class="itemIcon heart" />
     </template>
     <template #heading>About Me</template>
 
@@ -20,14 +20,14 @@ import Infoicon from "@/components/icons/infoicon.vue";
   </WelcomeItem>
   <WelcomeItem class="item1">
     <template #icon>
-      <infoicon class="itemIcon" />
+      <infoicon class="itemIcon info" />
     </template>
     <template #heading>Facts</template>
     One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
   </WelcomeItem>
   <WelcomeItem class="item2">
     <template #icon>
-      <DocumentationIcon class="itemIcon" />
+      <DocumentationIcon class="itemIcon current" />
     </template>
     <template #heading>Currently</template>
      Workng for Docunite® as a Solution Developer since  3 years.
@@ -35,7 +35,7 @@ import Infoicon from "@/components/icons/infoicon.vue";
 
   <WelcomeItem class="item3">
     <template #icon>
-      <ToolingIcon class="itemIcon"/>
+      <ToolingIcon class="itemIcon tools"/>
     </template>
     <template #heading>Tooling</template>
       Working with VueJs, Webstorm, Git, Javascript, Typescript, css, SCSS
@@ -45,7 +45,7 @@ import Infoicon from "@/components/icons/infoicon.vue";
 
   <WelcomeItem class="item4">
     <template #icon>
-      <EcosystemIcon class="itemIcon"/>
+      <EcosystemIcon class="itemIcon projects"/>
     </template>
     <template #heading>Projects</template>
 
@@ -88,5 +88,27 @@ import Infoicon from "@/components/icons/infoicon.vue";
 @keyframes item4 {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.heart:hover{
+  color: red;
+}
+.info:hover{
+  color: blue;
+}
+.current:hover{
+color:yellow;
+}
+.tools:hover{
+  color: green;
+}
+.projects:hover{
+animation: mymove 2s ;
+
+}
+@keyframes mymove {
+  0% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
 </style>
