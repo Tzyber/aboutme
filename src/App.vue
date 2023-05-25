@@ -1,6 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 import TheWelcome from './components/TheWelcome.vue'
+
+import AboutMe from "@/components/About-me.vue";
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Vue logo" class="logo" src="./assets/me.png" width="400" height="401" />
 
     <div class="wrapper">
-      <HelloWorld msg="Dominik Dörrier" />
+      <about-me msg="Dominik Dörrier" />
     </div>
   </header>
 
