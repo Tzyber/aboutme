@@ -18,14 +18,14 @@ import Infoicon from "@/components/icons/infoicon.vue";
 
     Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology.
   </WelcomeItem>
-  <WelcomeItem class="item1">
+  <WelcomeItem class="item2">
     <template #icon>
       <infoicon class="itemIcon info" />
     </template>
     <template #heading>Facts</template>
     One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
   </WelcomeItem>
-  <WelcomeItem class="item2">
+  <WelcomeItem class="item3">
     <template #icon>
       <DocumentationIcon class="itemIcon current" />
     </template>
@@ -33,17 +33,17 @@ import Infoicon from "@/components/icons/infoicon.vue";
      Working for Docunite® as a Solution Developer since  3 years.
   </WelcomeItem>
 
-  <WelcomeItem class="item3">
+  <WelcomeItem class="item4">
     <template #icon>
       <ToolingIcon class="itemIcon tools"/>
     </template>
     <template #heading>Tooling</template>
-      Working with VueJs, Webstorm, Git, Javascript, Typescript, css, SCSS
+      Working with VueJs, Webstorm, Git, Javascript, Typescript, CSS, SCSS
     <br />
 
   </WelcomeItem>
 
-  <WelcomeItem class="item4">
+  <WelcomeItem class="item5">
     <template #icon>
       <EcosystemIcon class="itemIcon projects"/>
     </template>
@@ -89,6 +89,13 @@ import Infoicon from "@/components/icons/infoicon.vue";
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.item5 {
+  animation: item4 16s;
+}
+@keyframes item5 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .heart:hover{
   color: red;
@@ -103,10 +110,10 @@ color:yellow;
   color: green;
 }
 .projects:hover{
-animation: mymove 2s ;
+animation: rotate 2s ;
 
 }
-@keyframes mymove {
+@keyframes rotate {
   0% {transform: rotate(90deg);}
   50% {transform: rotate(180deg);}
   100% {transform: rotate(360deg);}
