@@ -15,7 +15,7 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>About Me</template>
 
-    Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things technology. One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
+    Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology. One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
   </WelcomeItem>
   <WelcomeItem class="item2">
     <template #icon>
