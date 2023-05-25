@@ -30,7 +30,7 @@ import Infoicon from "@/components/icons/infoicon.vue";
       <DocumentationIcon class="itemIcon current" />
     </template>
     <template #heading>Currently</template>
-     Workng for Docunite® as a Solution Developer since  3 years.
+     Working for Docunite® as a Solution Developer since  3 years.
   </WelcomeItem>
 
   <WelcomeItem class="item3">
