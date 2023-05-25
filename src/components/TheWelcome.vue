@@ -5,6 +5,7 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import Infoicon from "@/components/icons/infoicon.vue";
 </script>
 
 <template>
@@ -15,7 +16,14 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>About Me</template>
 
-    Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology. One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
+    Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology.
+  </WelcomeItem>
+  <WelcomeItem class="item1">
+    <template #icon>
+      <infoicon class="itemIcon" />
+    </template>
+    <template #heading>Facts</template>
+    One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
   </WelcomeItem>
   <WelcomeItem class="item2">
     <template #icon>
