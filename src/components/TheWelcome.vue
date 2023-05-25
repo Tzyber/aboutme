@@ -11,7 +11,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <WelcomeItem class="item1">
     <template #icon>
-      <SupportIcon />
+      <SupportIcon class="itemIcon" />
     </template>
     <template #heading>About Me</template>
 
@@ -19,7 +19,7 @@ import SupportIcon from './icons/IconSupport.vue'
   </WelcomeItem>
   <WelcomeItem class="item2">
     <template #icon>
-      <DocumentationIcon />
+      <DocumentationIcon class="itemIcon" />
     </template>
     <template #heading>Currently</template>
      Workng for Docunite® as a Solution Developer since  3 years.
@@ -27,7 +27,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <WelcomeItem class="item3">
     <template #icon>
-      <ToolingIcon />
+      <ToolingIcon class="itemIcon"/>
     </template>
     <template #heading>Tooling</template>
       Working with VueJs, Webstorm, Git, Javascript, Typescript, css, SCSS
@@ -37,7 +37,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <WelcomeItem class="item4">
     <template #icon>
-      <EcosystemIcon />
+      <EcosystemIcon class="itemIcon"/>
     </template>
     <template #heading>Projects</template>
 
@@ -48,6 +48,10 @@ import SupportIcon from './icons/IconSupport.vue'
 </template>
 
 <style scoped lang="scss">
+.itemIcon:hover{
+  transform: scale(1.2);
+}
+
 .item1 {
   animation: item1 4s;
 }
