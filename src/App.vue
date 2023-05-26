@@ -3,7 +3,6 @@
 import TheWelcome from './components/TheWelcome.vue'
 
 import AboutMe from "@/components/About-me.vue";
-import StatusNavbar from "@/components/StatusNavbar.vue";
 </script>
 
 <template>
