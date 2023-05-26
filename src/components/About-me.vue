@@ -1,4 +1,6 @@
 <script setup>
+import StatusNavbar from "@/components/StatusNavbar.vue";
+
 defineProps({
   msg: {
     type: String,

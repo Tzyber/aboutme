@@ -7,6 +7,7 @@ import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import Infoicon from "@/components/icons/infoicon.vue";
 import {ref} from "vue";
+import CurrentStatusIcon from "@/components/icons/CurrentStatusIcon.vue";
 
 const counter = ref(0)
 function triggerEvent() {
@@ -69,6 +70,13 @@ if (counter.value > 10)
 
     Projects Coming soon TM
   </WelcomeItem>
+  <WelcomeItem class="item6">
+    <template #icon>
+      <CurrentStatusIcon class="itemIcon status"/>
+    </template>
+    <template #heading>Current Status</template>
+    <img src="https://api.netlify.com/api/v1/badges/59188988-3dcc-4be9-82e1-3f47cea36363/deploy-status" alt="currentStatus" width="150" height="30">
+  </WelcomeItem>
 </template>
 
 <style scoped lang="scss">
@@ -116,6 +124,14 @@ if (counter.value > 10)
   animation: item5 10s;
 }
 @keyframes item5 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.item6 {
+  animation: item6 10s;
+}
+@keyframes item6 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }

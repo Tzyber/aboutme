@@ -3,9 +3,11 @@
 import TheWelcome from './components/TheWelcome.vue'
 
 import AboutMe from "@/components/About-me.vue";
+import StatusNavbar from "@/components/StatusNavbar.vue";
 </script>
 
 <template>
+
   <header>
     <img alt="Vue logo" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
 
@@ -16,7 +18,9 @@ import AboutMe from "@/components/About-me.vue";
 
   <main>
     <TheWelcome />
+
   </main>
+
 </template>
 
 <style scoped>
