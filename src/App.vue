@@ -8,7 +8,7 @@ import AboutMe from "@/components/About-me.vue";
 <template>
 
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
+    <img alt="my_Image" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
 
     <div class="wrapper">
       <about-me msg="Dominik Dörrier" />
