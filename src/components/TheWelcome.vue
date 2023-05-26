@@ -13,7 +13,6 @@ function triggerEvent() {
   counter.value += 1
 
   if (counter.value === 10){
-    console.log("test")
    setTimeout(() => {
      counter.value = 0
    }, 2000)
