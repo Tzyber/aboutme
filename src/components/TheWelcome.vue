@@ -86,7 +86,7 @@ if (counter.value > 10)
 }
 
 .item1 {
-  animation: item1 4s;
+  animation: item1 2s;
 }
 @keyframes item1 {
   0% { opacity: 0; }
@@ -94,28 +94,28 @@ if (counter.value > 10)
 }
 
 .item2 {
-  animation: item2 8s;
+  animation: item2 4s;
 }
 @keyframes item2 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 .item3 {
-  animation: item3 12s;
+  animation: item3 6s;
 }
 @keyframes item3 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 .item4 {
-  animation: item4 16s;
+  animation: item4 8s;
 }
 @keyframes item4 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 .item5 {
-
+  animation: item5 10s;
 }
 @keyframes item5 {
   0% { opacity: 0; }
