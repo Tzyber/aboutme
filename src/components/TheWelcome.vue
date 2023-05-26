@@ -6,20 +6,9 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import Infoicon from "@/components/icons/infoicon.vue";
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 import CurrentStatusIcon from "@/components/icons/CurrentStatusIcon.vue";
 
-const badgeUrl = ref("https://api.netlify.com/api/v1/badges/59188988-3dcc-4be9-82e1-3f47cea36363/deploy-status")
-const reloadImage = () => {
-  badgeUrl.value = '';
-  setTimeout(() => {
-    badgeUrl.value = 'https://api.netlify.com/api/v1/badges/59188988-3dcc-4be9-82e1-3f47cea36363/deploy-status';
-  }, 100);
-};
-
-onMounted(() => {
-  setInterval(reloadImage, 5000); // Reload the image every 5 seconds (adjust the interval as needed)
-});
 const counter = ref(0)
 function triggerEvent() {
   counter.value += 1
@@ -86,7 +75,7 @@ if (counter.value > 10)
       <CurrentStatusIcon class="itemIcon status"/>
     </template>
     <template #heading>Current Status</template>
-    <img :src="badgeUrl ? badgeUrl :'https://api.netlify.com/api/v1/badges/59188988-3dcc-4be9-82e1-3f47cea36363/deploy-status' "  width="150" height="30">
+    <img src="https://api.netlify.com/api/v1/badges/59188988-3dcc-4be9-82e1-3f47cea36363/deploy-status" alt="currentStatus" width="150" height="30">
   </WelcomeItem>
 </template>
 
