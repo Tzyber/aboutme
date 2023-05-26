@@ -28,7 +28,6 @@ if (counter.value > 10)
 </script>
 
 <template>
-
   <WelcomeItem class="item1">
     <template #icon>
       <button class="invisButton">
@@ -61,9 +60,7 @@ if (counter.value > 10)
     <template #heading>Tooling</template>
       Working with VueJs, Webstorm, Git, Javascript, Typescript, CSS, SCSS
     <br />
-
   </WelcomeItem>
-
   <WelcomeItem class="item5">
     <template #icon>
       <EcosystemIcon class="itemIcon projects"/>
@@ -72,8 +69,6 @@ if (counter.value > 10)
 
     Projects Coming soon TM
   </WelcomeItem>
-
-
 </template>
 
 <style scoped lang="scss">
