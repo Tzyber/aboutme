@@ -31,7 +31,7 @@ if (counter.value > 10)
 
   <WelcomeItem class="item1">
     <template #icon>
-      <button style=" background: transparent; border: none !important;">
+      <button class="invisButton">
       <SupportIcon :class="iconClass()" @click="triggerEvent" />
       </button>
     </template>
@@ -77,6 +77,10 @@ if (counter.value > 10)
 </template>
 
 <style scoped lang="scss">
+.invisButton{
+  background: transparent; border: none !important;
+}
+
 .itemIcon:hover{
   transform: scale(1.2);
 }
