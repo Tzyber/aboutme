@@ -10,26 +10,36 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3 class="typed-out" >
+    <h3 class="line-1 anim-typewriter" >
       Web Designer and Web Developer
     </h3>
   </div>
 </template>
 
 <style scoped>
-.typed-out{
+
+
+.line-1{
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  animation:
-      typing 3s forwards,
-  blink-caret .75s step-end infinite;
+
   font-size: 1.2rem;
   width: 0;
 }
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(60) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
