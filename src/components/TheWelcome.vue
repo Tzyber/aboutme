@@ -6,13 +6,35 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import Infoicon from "@/components/icons/infoicon.vue";
+import {ref} from "vue";
+
+const counter = ref(0)
+function triggerEvent() {
+  counter.value += 1
+
+  if (counter.value === 10){
+    console.log("test")
+   setTimeout(() => {
+     counter.value = 0
+   }, 2000)
+  }
+}
+
+function   iconClass() {
+if (counter.value > 10)
+  return "big_Heart"
+
+  return "itemIcon heart"
+}
 </script>
 
 <template>
 
   <WelcomeItem class="item1">
     <template #icon>
-      <SupportIcon class="itemIcon heart" />
+      <button style=" background: transparent; border: none !important;">
+      <SupportIcon :class="iconClass()" @click="triggerEvent" />
+      </button>
     </template>
     <template #heading>About Me</template>
 
@@ -59,6 +81,9 @@ import Infoicon from "@/components/icons/infoicon.vue";
 .itemIcon:hover{
   transform: scale(1.2);
 }
+.itemIcon{
+  color: var(--color-text);
+}
 
 .item1 {
   animation: item1 4s;
@@ -90,11 +115,20 @@ import Infoicon from "@/components/icons/infoicon.vue";
   100% { opacity: 1; }
 }
 .item5 {
-  animation: item4 16s;
+
 }
 @keyframes item5 {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.big_Heart{
+  animation: bigHeart 2s;
+}
+@keyframes bigHeart {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(2.5); color: red }
+  100% { transform: scale(1.0); }
 }
 
 .heart:hover{
