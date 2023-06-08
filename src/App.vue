@@ -6,8 +6,8 @@ import AboutMe from "@/components/About-me.vue";
 </script>
 
 <template>
-  <header class="testheader">
-    <div class="top bottom"></div>
+  <header>
+
     <img alt="my_Image" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
 
     <div class="wrapper">
@@ -23,11 +23,9 @@ import AboutMe from "@/components/About-me.vue";
 
 <style lang="scss" >
 
-#app{
-  transition:  2s ;
-}
 header {
   line-height: 1.5;
+
 }
 
 .logo {
