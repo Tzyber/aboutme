@@ -72,28 +72,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
+@media (min-width: 1024px) {
+  #app {
+    --border-width: 4px;
+    --border-color: grey;
+    background: linear-gradient(to right, var(--border-color) var(--border-width), transparent var(--border-width)) 0 50%,
+    linear-gradient(to right, var(--border-color) var(--border-width), transparent var(--border-width)) 0 100%,
+    linear-gradient(to left, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 0,
+    linear-gradient(to left, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 50%,
+    linear-gradient(to bottom, var(--border-color) var(--border-width), transparent var(--border-width)) 0 0,
+    linear-gradient(to bottom, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 0,
+    linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 0 100%,
+    linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
 
-#app{
-  --border-width: 4px;
-  --border-color: grey;
-  background:
-
-          linear-gradient(to right,  var(--border-color) var(--border-width), transparent var(--border-width)) 0 50%,
-          linear-gradient(to right, var(--border-color) var(--border-width), transparent var(--border-width)) 0 100%,
-          linear-gradient(to left, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 0,
-          linear-gradient(to left, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 50%,
-          linear-gradient(to bottom, var(--border-color) var(--border-width), transparent var(--border-width)) 0 0,
-          linear-gradient(to bottom, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 0,
-          linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 0 100%,
-
-          linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
-
-  background-size: 25px 25px;
+    background-size: 25px 25px;
 
 
+  }
 
-}
-
-#app{
-  background-repeat: no-repeat;
+  #app {
+    background-repeat: no-repeat;
+  }
 }
