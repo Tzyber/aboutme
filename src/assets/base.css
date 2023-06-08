@@ -70,6 +70,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 #app{
@@ -88,7 +89,7 @@ body {
           linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
 
   background-size: 25px 25px;
-  transition:  2s ;
+
 
 
 }

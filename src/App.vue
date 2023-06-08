@@ -21,9 +21,11 @@ import AboutMe from "@/components/About-me.vue";
   </main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
-
+#app{
+  transition:  2s ;
+}
 header {
   line-height: 1.5;
 }
