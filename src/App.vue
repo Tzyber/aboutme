@@ -6,8 +6,8 @@ import AboutMe from "@/components/About-me.vue";
 </script>
 
 <template>
-
-  <header>
+  <header class="">
+    <div class="top bottom"></div>
     <img alt="my_Image" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
 
     <div class="wrapper">
@@ -15,14 +15,15 @@ import AboutMe from "@/components/About-me.vue";
     </div>
   </header>
 
-  <main>
+  <main class="test top bottom">
     <TheWelcome />
 
   </main>
-
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+
 header {
   line-height: 1.5;
 }
@@ -35,6 +36,7 @@ header {
 }
 
 @media (min-width: 1024px) {
+
   header {
     display: flex;
     place-items: center;
@@ -51,4 +53,5 @@ header {
     flex-wrap: wrap;
   }
 }
+
 </style>
