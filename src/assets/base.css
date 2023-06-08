@@ -72,7 +72,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app{
+.testheader{
   --border-width: 4px;
   --border-color: grey;
   background:
@@ -88,9 +88,11 @@ body {
           linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
 
   background-size: 25px 25px;
-  transition: 6s;
+  transition: background 2s ease;
+
+
 }
 
-#app{
+.testheader{
   background-repeat: no-repeat;
 }

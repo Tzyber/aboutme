@@ -6,7 +6,7 @@ import AboutMe from "@/components/About-me.vue";
 </script>
 
 <template>
-  <header class="">
+  <header class="testheader">
     <div class="top bottom"></div>
     <img alt="my_Image" class="logo" src="./assets/ITSME.jpg" width="350" height="350" />
 
@@ -15,7 +15,7 @@ import AboutMe from "@/components/About-me.vue";
     </div>
   </header>
 
-  <main class="test top bottom">
+  <main class="">
     <TheWelcome />
 
   </main>
