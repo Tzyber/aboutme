@@ -5,7 +5,7 @@ import AboutMe from "@/components/About-me.vue";
 </script>
 
 <template>
-  <header>
+  <header >
 
     <img alt="my_Image" class="logo" src="../assets/ITSME.jpg" width="350" height="350" />
 

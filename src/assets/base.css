@@ -73,7 +73,7 @@ body {
 
 }
 @media (min-width: 1024px) {
-  #app {
+  body:hover >  #app {
     --border-width: 4px;
     --border-color: grey;
     background: linear-gradient(to right, var(--border-color) var(--border-width), transparent var(--border-width)) 0 50%,
@@ -84,16 +84,16 @@ body {
     linear-gradient(to bottom, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 0,
     linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 0 100%,
     linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
-
+    transition: background 2s;
     background-size: 25px 25px;
-  transition: background 3s;
 
-  }
 
-  #app {
-    background-repeat: no-repeat;
+
   }
 }
+body:hover > #app { background-repeat: no-repeat;}
+
+
 
 header {
   line-height: 1.5;
