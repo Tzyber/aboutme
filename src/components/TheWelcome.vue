@@ -68,7 +68,7 @@ if (counter.value > 10)
     </template>
     <template #heading>Projects</template>
     <div style="display: flex">
-<span style="margin-right: 3%"> repository
+<span style="margin-right: 3%"> Repository
   </span>
       <a href="https://github.com/Tzyber/aboutme" target="_blank">
       <img  src="/github-mark-white.svg" alt="My Repository" width="30" height="30">
