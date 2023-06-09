@@ -86,7 +86,7 @@ body {
     linear-gradient(to top, var(--border-color) var(--border-width), transparent var(--border-width)) 100% 100%;
 
     background-size: 25px 25px;
-
+  transition: background 3s;
 
   }
 
