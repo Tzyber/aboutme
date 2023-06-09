@@ -73,7 +73,7 @@ body {
 
 }
 @media (min-width: 1024px) {
-  body >  #app {
+  body:hover >  #app {
     --border-width: 4px;
     --border-color: grey;
     background: linear-gradient(to right, var(--border-color) var(--border-width), transparent var(--border-width)) 0 50%,
@@ -91,7 +91,7 @@ body {
 
   }
 }
-body > #app { background-repeat: no-repeat;}
+body:hover > #app { background-repeat: no-repeat;}
 
 
 
