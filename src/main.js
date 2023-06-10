@@ -7,8 +7,13 @@ import app from "@/App.vue";
 import aboutMeMainComponent from "@/components/aboutMeMainComponent.vue";
 const router = createRouter({
     history: createWebHistory(),
+    mode: 'history',
     routes: [
-        {path: '/', name: 'home', component: aboutMeMainComponent},
+        {path: '',   name: 'home', component: aboutMeMainComponent},
+        {
+            path: '/:pathMatch(.*)*',
+            redirect: '/'
+        }
         ]
 })
 createApp(App)
