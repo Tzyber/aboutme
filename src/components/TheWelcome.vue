@@ -167,8 +167,8 @@ animation: rotate 2s ;
 
 }
 @keyframes rotate {
-  0% {transform: rotate(90deg);}
-  50% {transform: rotate(180deg);}
+  0% {transform: rotate(0deg);}
+
   100% {transform: rotate(360deg);}
 }
 </style>
