@@ -37,14 +37,14 @@ if (counter.value > 10)
     </template>
     <template #heading>About Me</template>
 
-    Hello! My name is Dominik  and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology.
+    Hello! My name is Dominik and I am a 27-year-old web developer. I consider myself a bit of a nerd and have a passion for all things in technology.
   </WelcomeItem>
   <WelcomeItem class="item2">
     <template #icon>
       <infoicon class="itemIcon info" />
     </template>
     <template #heading>Facts</template>
-    One of my favorite aspects of my job is web design, as I love the creativity and problem-solving that goes into creating beautiful and functional websites.
+    One aspect of my job that I particularly enjoy is web design. I find the process of designing visually appealing and functional websites to be both creatively fulfilling and intellectually challenging.
   </WelcomeItem>
   <WelcomeItem class="item3">
     <template #icon>
