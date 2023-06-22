@@ -70,7 +70,7 @@ if (counter.value > 10)
     <div style="display: flex">
 <span style="margin-right: 3%"> Repository
   </span>
-      <a href="https://github.com/Tzyber/aboutme" target="_blank">
+      <a href="https://github.com/Tzyber?tab=repositories" target="_blank">
       <img  src="/github-mark-white.svg" alt="My Repository" width="30" height="30">
       </a>
     </div>
